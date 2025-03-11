@@ -1,16 +1,12 @@
 import yaml
 
 def load_router_details(yaml_file):
-    """
-    Load router details from a YAML file
-    """
+    """ Load router details from a YAML file """
     with open(yaml_file, 'r') as file:
         return yaml.safe_load(file)
 
 def connect_to_router(router):
-    """
-    Connect to routers and get hostname
-    """
+    """ Connect to routers and get hostname """
     print(f"Connecting to {router['hostname']} at {router['ip']}...")
     print(f"Using username: {router['username']}")
     print(f"Enable password: {router['enable_password']}")

@@ -24,5 +24,5 @@ jobs:
 
       - name: Run Documentation Checks
         run: |
-          flake8 --select=D connect_routers.py
+          flake8 --select=D sample.py
 

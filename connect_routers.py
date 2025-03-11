@@ -6,7 +6,7 @@ def load_router_details(yaml_file):
         return yaml.safe_load(file)
 
 def connect_to_router(router):
-    """Connect to routers and get hostname."""
+    """Simulate connecting to a router and print its details."""
     print(f"Connecting to {router['hostname']} at {router['ip']}...")
     print(f"Using username: {router['username']}")
     print(f"Enable password: {router['enable_password']}")

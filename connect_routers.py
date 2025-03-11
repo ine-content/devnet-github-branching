@@ -16,3 +16,5 @@ def connect_to_router(router):
 routers = load_router_details('routers.yaml')['routers']
 for router in routers:
     connect_to_router(router)
+
+

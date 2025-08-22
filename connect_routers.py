@@ -5,11 +5,13 @@ def load_router_details(yaml_file):
     with open(yaml_file, 'r') as file:
         return yaml.safe_load(file)
 
+
 def connect_to_router(router):
     """Simulate connecting to a router and print its details."""
     print(f"Connecting to {router['hostname']} at {router['ip']}...")
     print(f"Using username: {router['username']}")
     print(f"Enable password: {router['enable_password']}")
+    print(f"Example command: 'show ip interface brief'")
     print(f"Connection to {router['hostname']} successful!")
     print("-" * 40)
 
